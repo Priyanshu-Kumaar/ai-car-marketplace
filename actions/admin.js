@@ -17,7 +17,7 @@ export async function getAdmin() {
     return { authorized: false, reason: "not-admin" };
   }
 
-  return { authorized: true, user };
+  return { authorized: true,user};
 }
 
 /**
