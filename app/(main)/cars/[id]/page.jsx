@@ -1,4 +1,3 @@
-"use client"
 import { getCarById } from "@/actions/car-listing";
 import { CarDetails } from "./_components/car-details";
 import { notFound } from "next/navigation";
