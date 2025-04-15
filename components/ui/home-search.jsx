@@ -87,7 +87,7 @@ export function HomeSearch() {
     });
 
   // Handle text search submissions
-  const handleTextSearch = (e) => {
+  const handleTextSearch = (e)=> {
     e.preventDefault();
     if (!searchTerm.trim()) {
       toast.error("Please enter a search term");
