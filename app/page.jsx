@@ -80,6 +80,9 @@ export default async function Home() {
                     }
                     alt={make.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
+                    
                     style={{ objectFit: "contain" }}
                   />
                 </div>
@@ -155,6 +158,8 @@ export default async function Home() {
                     }
                     alt={type.name}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+
                     className="object-cover group-hover:scale-105 transition duration-300"
                   />
                 </div>
