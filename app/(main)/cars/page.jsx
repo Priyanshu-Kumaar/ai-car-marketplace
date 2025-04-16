@@ -1,4 +1,4 @@
-import { CarFilters } from "./_components/car-filter";
+import { CarFilterWrapper } from "./_components/car-filter";
 import { getCarFilters } from "@/actions/car-listing";
 import { CarListings } from "./_components/car-listing";
 export const metadata = {
@@ -17,7 +17,7 @@ export default async function CarsPage() {
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Filters Section */}
         <div className="w-full lg:w-80 flex-shrink-0">
-          <CarFilters filters={filtersData.data} />
+          <CarFilterWrapper filters={filtersData.data} />
         </div>
 
         {/* Car Listings */}

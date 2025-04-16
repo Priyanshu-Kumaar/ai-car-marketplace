@@ -1,3 +1,4 @@
+// ❌ DO NOT put 'use client' here
 import { getCarById } from "@/actions/car-listing";
 import { CarDetails } from "./_components/car-details";
 import { notFound } from "next/navigation" ;
@@ -25,11 +26,9 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function CarDetailsPage({ params }) {
-  // Fetch car details
-  const { id } = await params;
+  const { id } = params;
   const result = await getCarById(id);
 
-  // If car not found, show 404
   if (!result.success) {
     notFound();
   }

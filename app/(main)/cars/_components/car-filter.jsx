@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState, useEffect, Suspense } from "react";
 import { useRouter, usePathname, useSearchParams } from "next/navigation";
 import { Filter, X, Sliders } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -22,7 +22,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-export const CarFilters = ({ filters }) => {
+ const CarFilters = ({ filters }) => {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
@@ -292,3 +292,11 @@ export const CarFilters = ({ filters }) => {
     </div>
   );
 };
+
+export const CarFilterWrapper =({filters})=>{
+  <Suspense>
+    <CarFilters filters={filters}/>
+  </Suspense>
+}
+
+// directly use CarFilters in C:\Users\priyanshu\OneDrive\Desktop\Vehql\my-app\app\(main)\cars\page.jsx;
