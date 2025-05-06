@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🚗 VehiQL – AI-Powered Car Marketplace
 
-## Getting Started
+**VehiQL** is a modern, full-stack car marketplace platform that leverages AI to extract car details from images, streamlines the car buying journey with smart filtering, and integrates dealership-level features like real-time test drive booking.
 
-First, run the development server:
+🔗 **Live Demo**: [Click here to explore VehiQL](https://ai-car-marketplace-omega.vercel.app/)
+
+---
+
+## ✨ Features
+
+- 🔍 **Smart Car Filtering** – Filter by model, price range, fuel type, car type, and more.
+- 🤖 **AI-Powered Car Detail Extraction** – Uses Google Gemini API to auto-fill car specifications from uploaded images.
+- 📝 **Detailed Car Pages** – View full specifications, high-quality image gallery, and interactive EMI calculator.
+- 🚗 **Test Drive Booking** – Real-time slot availability with dealerships.
+- 📊 **Admin Dashboard** – View analytics, manage car inventory, and update listings.
+- 🔐 **Bot Protection & Auth** – Clerk for authentication and Arcjet for security.
+
+---
+
+## 🛠️ Tech Stack
+
+| Frontend      | Backend      | AI & Infra             | Security       |
+| ------------- | ------------ | ---------------------- | -------------- |
+| Next.js       | Supabase     | Gemini API (Google AI) | Arcjet (bot detection) |
+| TailwindCSS   |              |                        | Clerk (Auth)   |
+| ShadCN UI     |              |                        | Vercel (Deploy) |
+
+---
+
+## 📷 Screenshots
+![Screenshot (26)](https://github.com/user-attachments/assets/cf77144c-bb23-4fcc-96a9-ea15148135e8)
+![Screenshot (28)](https://github.com/user-attachments/assets/4045ade8-6ea2-47d5-b9b4-e7482fc41a0e)
+![Screenshot (24)](https://github.com/user-attachments/assets/0bd2ad55-1436-455d-b6ef-06cfa053aff3)
+![Screenshot (47)](https://github.com/user-attachments/assets/ab96361b-4fc0-4e14-a9dd-ce464a4a0c8e)
+![Screenshot (48)](https://github.com/user-attachments/assets/36034726-1273-4ab1-9f9f-82076da4ad28)
+
+
+---
+
+## 🚀 Getting Started (Development Setup)
 
 ```bash
+# Clone the repository
+git clone https://github.com/Priyanshu-Kumaar/ai-car-marketplace.git
+cd vehiql
+cd my-app
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env
+# Add your Supabase, Clerk, Gemini API keys, etc.
+
+# Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Visit http://localhost:3000 to see the app in action.
