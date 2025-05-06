@@ -53,7 +53,7 @@ cd my-app
 npm install
 
 # Set up environment variables
-Create an .env file in yout project and insert all the keys related to Clerk,Supabase,Arcjet etc.
+Create an .env file in your project and insert all the keys related to Clerk,Supabase,Arcjet etc.
 # Add your Supabase, Clerk, Gemini API keys, etc.
 
 # Run the development server
