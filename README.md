@@ -29,9 +29,13 @@
 
 ## 📷 Screenshots
 ![Screenshot (26)](https://github.com/user-attachments/assets/cf77144c-bb23-4fcc-96a9-ea15148135e8)
+
 ![Screenshot (28)](https://github.com/user-attachments/assets/4045ade8-6ea2-47d5-b9b4-e7482fc41a0e)
+
 ![Screenshot (24)](https://github.com/user-attachments/assets/0bd2ad55-1436-455d-b6ef-06cfa053aff3)
+
 ![Screenshot (47)](https://github.com/user-attachments/assets/ab96361b-4fc0-4e14-a9dd-ce464a4a0c8e)
+
 ![Screenshot (48)](https://github.com/user-attachments/assets/36034726-1273-4ab1-9f9f-82076da4ad28)
 
 
@@ -49,7 +53,7 @@ cd my-app
 npm install
 
 # Set up environment variables
-cp .env.example .env
+Create an .env file in yout project and insert all the keys related to Clerk,Supabase,Arcjet etc.
 # Add your Supabase, Clerk, Gemini API keys, etc.
 
 # Run the development server
